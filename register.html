@@ -1,0 +1,42 @@
+<html>
+  <head>
+  <link href="css/my-styles.css" rel="stylesheet">
+  </head>
+<body>
+  <!-- The following '<form>' element tells the browser to send
+       an HTTP POST Request to server w/ data the user
+       types into it's children '<input>' elements.
+
+       Note: Browser does not send other non-input elements
+       to the server, e.g. the '<p>' elements.
+
+       Note: The '<br />' element after the first input
+       breaks the layout flow and puts the last name
+       input element on the next line below it. -->
+  <form action="register-user" method="POST">
+    
+    
+    
+    <span>First:</span><input id="first" placeholder="Enter your first name"/><br />
+    <span>Last:</span><input id="last" placeholder="Enter your last name"/>
+    <input type="submit" id="Submit" value="Register" disabled="true"/>
+    
+  </form>
+  <table>
+    <tr><th>Col 1</th><th>Col 2</th></tr>
+    <tr><td><p> sdlfkj df</p></td><td><p id="instructions">Enter your first and last name then press the Register button
+    to create your new membership profile.</p></td></tr>
+    </table>
+  <footer>
+    <hr />
+    <a href="lecture.html">Lecture Notes</a>
+    <a href="references.html">References</a>
+  </footer>
+
+  <!-- The '<script>' element is not displayed to the user.
+       The browser will use HTTP to download the file named 'my-code.js'
+       from the 'js folder from the *same* server that this
+       HTML page was downloaded from -->
+  <script src="js/my-code.js"></script> 
+</body>
+</html>

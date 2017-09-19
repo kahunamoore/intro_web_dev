@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <link href="css/my-styles.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+    <h1>Lecture #1</h1>
+    
+    <h2>Introductions</h2>
+    
+    <h2>What is the web made up of?</h2>
+    
+    <dl>
+      <dt>Web Page</dt>
+      <dd>An HTML file stored on a Web Server and exposed via HTTP.</dd>
+      
+      <dt>HyperLink</dt>
+      <dd>A URL embedded in one Web Page that references another Web Page</dd>
+
+      <dt>URL</dt>
+      <dd>Names a resource on the web/network. Acronym for "Uniform Resource Locator".</dd>
+      <dd>Example: 'https://server-name.com/resource-name'</dd>
+
+      <dt>Absolute URL</dt>
+      <dd>A URL that begins with 'http://' or a leading '/' and can reference any resource on the web. The browser's
+          address bar usually displays Absolute URLs.</dd>
+      <dd>Examples: '/index.html', 'https://google.com/search', '/css/my-styles.css'</dd>
+
+      <dt>Relative URL</dt>
+      <dd>A URL that does <strong>not</strong> begin with 'http://' or a leading '/'. They can only reference resources
+          on the same Web Server that the HTML page came from. Most HyperLinks on a Web Page will
+          reference other files on the same server by using Relative URLs.</dd>
+      <dd>Examples: 'register.html', 'js/my-code.js', 'css/my-styles.css'</dd>
+
+      <dt>HTML</dt>
+      <dd>Standard for structured text that defines a tree of HTML Elements to be
+          displayed by the browser. Acronym for "HyperText Markup Language".</dd>
+
+      <dt>HTML Document</dt>
+      <dd>An HTML Document (aka 'document') that represents a Web Page loaded into the Browser
+          The document holds information about the page such as it's URL (document.location),
+          cookies (document.cookies) and other properties of the Web Page's content (document.body).
+          Each document has exactly one 'Root' element (i.e. "<html>") that contains a tree of elements.</dd>
+      <dd><img src="images/html-tree.gif" /></dd>
+
+      <dt>HTML Element</dt>
+      <dd>Structured text that surrounds and defines the semantics of a document's content.
+          Each HTML Element (aka 'element') has at most one 'Parent' element and might
+          contain zero or more 'Children' elements. All elements start with an opening 'tag' but
+          only some elements have closing 'tags'. The elements that cannot have closing tags
+          are called 'empty elements' and by virtue of not having a closing tag cannot have any
+          children elements. Elements often have a restricted set of types of children they may contain.</dd>
+      <dd>Example element w/ closing tag:
+        <span style="background: lightgray; font-family: monospace;">
+          &lt;a href="xyz"&gt;HyperLink to xyz&lt;/a&gt;</span></dd> 
+      <dd>Example 'empty' element w/o closing tag:
+        <span style="background: lightgray; font-family: monospace;">&lt;br /&gt;</span></dd>
+
+      <dt>HTML Attribute</dt>
+      <dd>All elements have one or more HTML Attributes (aka 'attributes') applied to them. These attributes
+          define/adjust the look or behavior of the elements they are applied to. If you do not specify
+          an attribute value for an element then the browser will give that attribute a default value.
+          The HTML standard defines which attributes can be applied to which elements. Some attributes
+          are required for a given element while others are optional.</dd>
+    </dl>
+
+    <h2>How does the web work?</h2>
+    
+    <img src="images/http-request-response.png" /> <!-- downloads and displays the image 'http-request-response.png' -->
+    
+    <dl>
+      <dt>HTTP</dt>
+      <dd>A TCP/IP Socket (which is like a pipe) through which HTTP Requests and HTTP Responses
+          are sent/received between the Browser and one or more servers. Stands for
+          "HyperText Transport Protocol"</dd>
+      
+      <dt>HTTP Request</dt>
+      <dd>Data sent by the Browser to the Server via a Socket</dd>
+      
+      <dt>HTTP Response</dt>
+      <dd>Data sent by the Server back to the Browser in response
+      to the Browser's previous HTTP Request</dd>
+
+      <dt>HTTP Client</dt>
+      <dd>A program (e.g. Browser) running on your computer or phone
+          that understands HTTP, HTML, CSS and JavaScript</dd>
+      
+      <dt>HTTP Server</dt>
+      <dd>A computer (e.g. Web Server or Internet Site) on the network that communicates with Browsers via HTTP</dd>
+
+      <dt>Socket</dt>
+      <dd>A TCP/IP connection between a Browser and a Web Server</dd>
+      
+      <dt>TCP/IP Socket: Transport Control Protocol/Internet Protocol</dt>
+      <dd>A messaging system that creates a reliable connection (via redundancy and retries)
+          over an unreliable, "best effort" messaging system.</dd>
+
+    </dl>
+    
+  <footer>
+    <hr />
+    <a href="lecture.html">Lecture Notes</a>
+    <a href="references.html">References</a>
+  </footer>
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+/* This is a "comment" in CSS, it does nothing,
+   but is good for communicating "intent" of nearby code */
+
+/* All elements with class="alert-text" attributes get these styles */
+.alert-text {
+  background: orange;
+  font-size: 20px;
+}
+
+/* All '<p>' elements get this style */
+p {
+  background: lightblue;
+ /* float: right; */
+}
+
+td {
+  border: 1px solid red;
+}
+@media (min-width: 700px) and (orientation: landscape)
+  
+[disabled="true"] {
+ 
+}
+/* These two CSS rules add more spacing (margins) around all '<dl>', '<dt>' and '<dd>' elements */
+
+dl {
+  margin: 5px;
+}
+
+dt {
+  margin: 10px;
+  font-weight: bold;
+}
+
+dd {
+ margin-bottom: 5px;
+}
+
+td {
+  max-width: 200px;
+  min-width: 500px;
+}

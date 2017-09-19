@@ -1,0 +1,287 @@
+<html>
+
+<head>
+  <link href="css/my-styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>References</h1>
+  
+  <h2>Background Information</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work">
+        How does the internet work?</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">
+        How does the web work?</a></li>
+  </ul>
+  
+  <h2>HTML Documentation</h2> 
+  <!-- The '<ul>' element displays an unordered list of items with dots or 'bullet-point' prefixes. -->
+  <ul>
+    <li><a href="https://www.w3.org/TR/html5/Overview.html">The HTML Specification (very technical)</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements (easy reading)</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">HTML Attributes (easy reading)</a></li>
+  </ul>
+  
+  <h2>Block-level vs Inline Elements</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">Block-level elements</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">Inline elements</a></li>
+  </ul>
+
+  <h2>Misc HTML &amp; JavaScript Topics</h2>
+  <dl>
+ 
+    <dt>Closures and variable capture</dt>
+    <dd>Dynamic scope (e.g. function definitions) the hold references
+        to variables in the enclosing scope.</dd>
+    
+    <dt>Global Object (window) &amp; 'use strict;'</dt>
+    <dd>Hoisting and global scope are restricted in strict code</dd>
+    
+    <dt>Call, Apply and Eval</dt>
+    <dd>Dynamic dispatch of functions with flexible "this" and arguments usage</dd>
+    
+    <dt>Promise
+    
+    <dt>Handling DOM Events</dt>
+    <dd>Callbacks/closures. Implied 'this' and passed event argument.</dd>
+    <dd></dd>
+    
+    <dt>Cookies</dt>
+    <dd>https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</dd>
+    <dd>https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie</dd>
+    
+    <dt>WebWorkers</dt>
+    <dd>Background "threads" to execute long-running functions</dd>
+    
+    <dt>Web Sockets</dt>
+    <dd>Two way socket between client/server</dd>
+
+    <dt>Module Frameworks</dt>
+    <dd>CommonJS Modules</dd>
+    <dd>Node.js Modules (CommonJS)</dd>
+    <dd>ES6 Modules</dd>
+    <dd>Encapsulation (namespace isolation) and dependency management</dd>
+    
+    <dt>Node.js Module Patterns</dt>
+    <dd>module.exports, require, etc.</dd>
+    <dd>SemVer</dd>
+    <dd>Versions of Node.js (nvm) - Eclipse plugin example.</dd>
+    <dd>module.exports is assigned an object you create that contains any/all data or functions
+        for other code that requires your module.</dd>
+    <dd>Native Modules</dd>
+    
+    <dt>ES6 &amp; Babeljs.io</dt>
+    <dd>Preprocessor that translates ES6 code into ES5 code for broader compatibility</dd>
+    <dd>When running your code on Node.js you control the version of JavaScript (included w/ Node.js)</dd>
+    <dd>When running your code in the browser, the browser controls the version of JavaScript</dd>
+    
+    <dt>Basic JavaScript Patterns</dt>
+    <dd>Or expressions (prop1 || prop2.other || {})</dd>
+    <dd>Function chaining (e.g. jQuery)</dd>
+
+    <dt>Microsoft VSCode</dt>
+    <dd>Cross platform code editor</dd>
+    <dd>jsconfig.json {"compilerOptions": {"target":"ES6"}} tells VSCode which syntax to support</dd>
+    
+    <dt>IFrames</dt>
+    <dd>Page within a page</dd>
+    
+    <dt>CORS</dt>
+    <dd>Rules for allowing/disallowing/controlling cross-site scripting</dd>
+    
+    <dt>JSON</dt>
+    <dd>Data format for JavaScript objects exchanged between browsers
+        and servers.</dd>
+    <dd>see also: Microservices</dd>
+    
+    <dt>Microservices & Middleware</dt>
+    <dd>Kafka</dd>
+    <dd>Spark</dd>
+    <dd>Onyx</dd>
+    <dd>Lambda Architecture</dd>
+    
+    <dt>REST API</dt>
+    <dd>XMLHttpRequest</dd>
+    
+    <dt>Pass by value vs Pass by reference</dt>
+    <dd>Primitives are passed by value</dd>
+    <dd>Objects are passed by reference</dd>
+
+    <dt>Security</dt>
+    <dd>Input/data scrubbing (eval, etc.)</dd>
+    <dd>Authentication & Authorization</dd>
+    <dd>Cookies, Auth Headers/Response codes, etc.</dd>
+    <dd>Let's Encrypt & Server Certificates</dd>
+    <dd>Integrations w/ PayPal, Square, etc.</dd>
+    <dd>Cross-site scripting, request forgery, man in the middle, </dd>
+    
+    <dt>In-Browser Database</dt>
+    <dd>LocalStorage</dd>
+    <dd>IndexedDB</dd>
+    
+    <dt>SQL Databases</dt>
+    <dd>MySQL</dd>
+    <dd>MS SQL Server</dd>
+    <dd>Oracle</dd>
+    <dd>PostgreSQL</dd>
+    <dd>Schemas & Schema Migration</dd>
+    <dd>SQL Standards and Extensions (mathematical well studied)</dd>
+    
+    <dt>NoSQL Databases</dt>
+    <dd>Redis</dd>
+    <dd>MongoDB</dd>
+    <dd>DynamoDB</dd>
+    <dd>Firebase</dd>
+    <dd>Big Table</dd>
+    <dd>Datomic</dd>
+    <dd>Datalog, Pig, </dd>
+    <dd>Interesting strengths, offsetting weaknesses</dd>
+    
+    <dt>Big Data</dt>
+    <dd>Hadoop</dd>
+
+    <dt>Object assignment breaks any vars passed by reference to a function</dt>
+    <dd>See udacity course Lecture 27 exports vs module.exports</dd>
+    <dd>Bottom line: don't overwrite/assign to exports "wrapper variable" 
+        but you *can* mutate it (e.g. a</dd>
+    
+    <dt>Testing & Continous Integration</dt>
+    <dd>CircleCI</dd>
+    <dd>Jenkins, etc.</dd>
+    
+    <dt>Compute and Network Hosting</dt>
+    <dd>Heroku</dd>
+    <dd>Amazon Web Services (AWS)</dd>
+    <dd>Google</dd>
+    <dd>Microsoft Azure</dd>
+    
+    <dt>iFrames</dt>
+    <dd>Helpful but hazardous</dd>
+    
+    <dt>IIFE</dt>
+    <dd>Expression (define) that both defines an anonymous (or named) function and calls it immediately, returning whatever that function returns (or void)</dd>
+    
+    
+    <dt>Corrections</dt>
+    <dd>Global object is 'window' not 'document'</dd>
+    
+    <dt>ES5 vs ES6/E2015 vs TypeScript</dt>
+    <dd>Place "'use strict';" at the top of your file to force the use of ES6 features</dd>
+    <dd>Important fixes for hazardous language features.</dd>
+    <dd>let vs var (hoisting)</dd>
+    <dd>Arrow functions</dd>
+    <dd>Modules w/ import and export</dd>
+    <dd>Template Literals</dd>
+    <dd>http://es6-features.org/</dd>
+    <dd>TypeScript http://www.typescriptlang.org/play/</dd>
+    <dd><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">String Templates</a></dd>
+    <dd><a href="http://es6-features.org">ES6 New Features</a></dd>
+    
+    <dt>Transpiling Languages to JavaScript</dt>
+    <dd>ASM.JS</dd>
+    <dd>CoffeeScript</dd>
+    <dd>ClojureScript</dd>
+    
+    <dt>Mobile Web</dt>
+    <dd>WebView</dd>
+    <dd>ReactNative</dd>
+    <dd>Expo XDE</dd>
+    
+  </dl>
+  
+  <h2>HTML &amp; JavaScript &amp; Developer Tools</h2>
+  <ul>
+    <li>
+      <dl>Package Management</dl>
+      
+      <dl>
+        <dt>Brew (macOS)</dt>
+        <dd>Installs and updates commonly used tools for software development, system utilities,
+            system services. The Brew command itself and the packages it installs are primarily command-line
+            programs. A lot of advanced tools do not have GUIs and operate better on the command line
+            because the output of one can be piped into the input of another allowing very
+            powerful chaining of operations.</dd>
+        <dd><a href="https://brew.sh/">Website</a></dd>
+        
+        <dt>PowerShell (Windows)</dt>
+        <dd>Windows only command line oriented for software development and system/network maintenance.</dd>
+        <dd>Some commands require Administrator access so launch with Admin privledges (right-click app, choose
+            Run as... Administrator). Should be used with caution.</dd>
+        <dd>Has a powerful shell scripting language in the Algol/C tradition.</dd>
+        
+        <dt>iTerm 2 (macOS)</dt>
+        <dd>Very nice (and free) alternative to the macOS default Terminal app.</dd>
+        <dd><a href="https://www.iterm2.com/">Website</a></dd>
+        
+        <dt>AWS</dt>
+        
+        <dt>Node.js</dt>
+        <dd>Download and install the Eclipse IBM Node.js Plug-in via the Eclipse Marketplace</dd>
+        
+        <dt>NPM &amp; Yarn</dt>
+        <dd>Yarn is better</dd>
+        
+        <dt>WebPack, Google Closure Compiler, etc.</dt>
+        <dd>links...</dd>
+        
+      </dl>
+      
+    </li>
+    
+    <li>
+ 
+      <dl>Development Environments</dl>
+      
+      <dl>
+        <dt>Eclipse (Eclipse IDE for JavaScript and Web Developers)</dt>
+        <dd>Available on all platforms. Requires Java JDK.</dd>
+        <dd>Free, widely used and feature rich. Kitchen sink.</dd>
+        <dd>Decent debugger</dd>
+        <dd><a href="https://eclipse.org/downloads/packages/eclipse-ide-javascript-and-web-developers/oxygenr">Download</a></dd>
+        
+        <dt>Web Storm</dt>
+        <dd>All platforms, requires JDK</dd>
+        <dd>Free & Commercial: $59/year + Free/discounts (verification req) for OSS projects, students, etc.</dd>
+        <dd><a href="https://www.jetbrains.com/webstorm/buy/#edition=personal">Personal</a></dd>
+        <dd><a href="https://www.jetbrains.com/webstorm/buy/#edition=discounts">Discounts</a></dd>
+
+        <dt>IntelliJ</dt>
+        <dd>All platforms, requires JDK</dd>
+        <dd>Free & Commercial: $149/year  + Free/discounts (verification req) for OSS projects, students, etc.</dd>
+        <dd><a href="https://www.jetbrains.com/idea/buy/#edition=personal">Personal</a></dd>
+        <dd><a href="https://www.jetbrains.com/idea/buy/#edition=discounts">Discounts</a></dd>
+
+        <dt>Visual Studio</dt>
+        <dd>Best on Windows, recent (limited) macOS support. No Linux.</dd>
+        <dd>Free option available. Best on Windows, very Microsoft centric/focused.</dd>
+        <dd>Weak integration w/ non-Edge browsers</dd>
+      </dl>
+  </ul>
+  
+  <h2>Showcases</h2>
+  <ul>
+    https://github.com/showcases/front-end-javascript-frameworks
+  </ul>
+    
+  <h2>Tutorials</h2><aside>Work these on your own if you want.</aside>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML</a></li>
+  </ul>
+  
+  <aside>
+    <h2>Front-end Tools</h2>
+    Misc: TypeScript, Coffee, ClojureScript, 
+    https://techbeacon.com/most-popular-javascript-front-end-tools
+  </aside>
+  
+  <footer>
+    <hr />
+    <a href="lecture.html">Lecture Notes</a>
+    <a href="references.html">References</a>
+  </footer>
+  
+</body>
+
+</html>
